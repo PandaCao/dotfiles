@@ -1,0 +1,50 @@
+# Setting java version of mvn:
+	- setting JAVA_home variable
+	- example:
+		export JAVA_HOME=/usr/lib/jvm/java-17-openjdk/
+		export PATH=$JAVA_HOME/bin:$PATH
+
+# Setting mvn mirrors/profiles:
+	- location:
+		.m2/settings.xml
+
+# Setting vpn:
+	- sudo openconnect vpn.ttc-marconi.cz
+
+# Remapping keyboard:
+	- using Input Remapper
+	- using keyd from https://github.com/rvaiya/keyd
+
+# NetworkManager CLI
+	- to disconecct use: nmcli con down id connectionname
+
+# Restart systemd-networkd
+	- systemctl restart systemd-networkd
+
+# Start FrontEnd of dg3/core/ui
+	- npx nx serve gui-back/gui front -p mdts
+
+# Start FrontEnd of dts-demo/FrontEnd
+	- npm run 
+
+# Nasazeni na 191 mymi-gui:
+	- npm run build:mdts a to, co ti vyblije do dist/apps/gui/ nahraješ na 191 do /opt/mymi-gui/gui/
+
+# Nasazeni IMS na 191:
+	- npm run build, potom scp -r build 10.22.4.191:/opt/ims/fe/
+	- commads: scp -r build 10.22.4.191:/opt/ims/fe/
+
+# Nasazeni ims_server na 191:
+	- prikaz ve slozce Ims: mvn clean install -DskipTests
+	- command: scp target/ims-server.war 10.22.4.191:/opt/ims/server/ims-server.war
+
+# Změna mirrorů pro maven:
+	- stačí cp v ~/.m2/settings.xml.mymi ~/.m2/settings.xml
+
+# Grep na projekt dg3
+	- příkaz: grep -iR "m2m" --exclude-dir=*node_modules* --exclude-dir=*target* --exclude-dir=*.bundle* --exclude-dir=*asciidoc* --exclude-dir=*dist* --exclude-dir=*.idea*
+
+# Import didů do catalogu"
+	- příkaz: java -jar catalog-app.jar import --json-input=/blabla.json --incompatible-updates --owner-of-all
+# Journalctl:
+	- journalctl --user -xe --follow
