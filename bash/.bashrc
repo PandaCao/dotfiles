@@ -1,8 +1,7 @@
+# BASHRC
 #
-# ~/.bashrc
 #
-
-# If not running interactively, don't do anything
+#
 [[ $- != *i* ]] && return
 
 alias ..="cd .."
@@ -25,7 +24,6 @@ alias mvncit='mvn clean install -DskipTests'
 alias mvnci='mvn clean install'
 
 PS1='[\u@\h \W]\$ '
-eval "$(~/.rbenv/bin/rbenv init - bash)"
-source /usr/share/nvm/init-nvm.sh
+
 export VISUAL=vim
 export EDITOR=vim
