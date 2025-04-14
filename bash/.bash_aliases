@@ -24,10 +24,10 @@ alias ll='ls -la'
 alias lsl='ls -l'
 
 # IDEs, Apps for development
-alias idea='$HOME/idea/bin/idea'
-alias datagrip='$HOME/apps/datagrip/bin/datagrip'
-alias phpstorm='$HOME/apps/phpStorm/bin/phpstorm'
-alias postman='$HOME/apps/Postman/Postman'
+alias idea='$HOME/Apps/idea/bin/idea'
+alias datagrip='$HOME/Apps/datagrip/bin/datagrip'
+alias phpstorm='$HOME/Apps/phpStorm/bin/phpstorm'
+alias postman='$HOME/Apps/Postman/Postman'
 
 # Maven
 alias mvncit='mvn clean install -DskipTests'
