@@ -26,7 +26,7 @@ alias lsl='ls -l'
 # IDEs, Apps for development
 alias idea='$HOME/Apps/idea/bin/idea'
 alias datagrip='$HOME/Apps/datagrip/bin/datagrip'
-alias phpstorm='$HOME/Apps/phpStorm/bin/phpstorm'
+alias phpstorm='$HOME/Apps/phpstorm/bin/phpstorm'
 alias postman='$HOME/Apps/Postman/Postman'
 
 # Maven
