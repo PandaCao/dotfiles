@@ -32,3 +32,10 @@ alias postman='$HOME/Apps/Postman/Postman'
 # Maven
 alias mvncit='mvn clean install -DskipTests'
 alias mvnci='mvn clean install'
+
+# Dotykacka PHP
+alias stan='$HOME/Projects/is/docker.sh composer ci:stan'
+alias lint='$HOME/Projects/is/docker.sh composer ci:lint'
+alias latte='$HOME/Projects/is/docker.sh composer ci:latte-lint'
+alias cbf='$HOME/Projects/is/docker.sh composer ci:cbf'
+alias test='$HOME/Projects/is/docker.sh composer ci:test'
